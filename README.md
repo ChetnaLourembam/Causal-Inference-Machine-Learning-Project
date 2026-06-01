@@ -40,4 +40,4 @@
 
 ## Cover Image
 
-![Project Cover Image](CoverImage/cover_image.png)
+(CoverImage/CI&ML_cover_impage.png)
