@@ -40,4 +40,4 @@
 
 ## Cover Image
 
-(CoverImage/CI&ML_cover_impage.png)
+(ci.png)
