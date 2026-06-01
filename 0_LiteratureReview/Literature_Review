@@ -2,40 +2,32 @@
 LITERATURE REVIEW 
 **************************************************************************************************************************************************************
 
-
 Source 1: 
 
 Link: https://doi.org/10.1214/18-AOS1709
-Objective: 
-Methods:
-Outcomes:
-Relation to the Project:
-
-
-
+Objective: The paper introduces Generalized Random Forests (GRF), a flexible machine learning framework that extends traditional random forests to estimate a broad class of statistical quantities defined through local moment conditions. The authors aim to provide a nonparametric method capable of uncovering heterogeneous effects in high-dimensional settings while maintaining valid statistical inference.
+Methods: The authors develop an adaptive forest-based weighting scheme that replaces traditional kernel methods used in local estimation. Instead of assigning weights based solely on distance in the covariate space, the algorithm grows trees specifically designed to identify heterogeneity in the parameter of interest. The paper establishes theoretical properties of the estimator, including consistency and asymptotic normality, and proposes variance estimators for valid confidence intervals. The framework is applied to several problems, including quantile regression, conditional average partial effects, and heterogeneous treatment effect estimation.
+Outcomes: The study demonstrates that generalized random forests can effectively estimate complex, non-linear relationships and heterogeneous effects in settings where traditional methods struggle. The authors show that the method provides statistically valid estimates and confidence intervals while remaining computationally efficient. The resulting GRF framework forms the basis for practical implementations of causal forests and other modern machine learning estimators used in causal inference.
+Relation to the Project: This paper provides the methodological foundation for the empirical analysis of the Lalonde job-training dataset. The study's Generalized Random Forest framework is implemented through the `grf` package in R to estimate the causal effect of participation in the National Supported Work (NSW) program on 1978 earnings. Unlike traditional regression approaches that focus on a single average treatment effect, the causal forest allows the project to investigate treatment-effect heterogeneity by estimating Conditional Average Treatment Effects (CATEs) for individuals with different characteristics. The methodology is therefore used to examine not only whether the training program increased earnings on average, but also whether its effectiveness varies according to factors such as age, education, race, marital status, and previous earnings.
 
 
 Source 2: 
 
 Link: https://doi.org/10.1353/obs.2019.0001
+Objective: The paper applies causal forests to evaluate heterogeneous treatment effects in the National Study of Learning Mindsets, a large-scale educational intervention designed to promote a growth mindset among high school students. The authors aim to determine whether the intervention improved academic achievement on average, whether its effectiveness varied across schools and students, and which characteristics moderated treatment effects.
+Methods: The study employs causal forests implemented through the R package grf. First, regression forests are used to estimate the expected outcome and treatment propensity functions. These estimates are then incorporated into a causal forest framework based on the R-learner approach, which adjusts for selection bias and allows for flexible estimation of conditional average treatment effects (CATEs). The analysis accounts for clustering at the school level through cluster-robust forest construction and inference procedures. Variable importance measures and tuning parameter optimization are used to improve model performance and identify key treatment-effect moderators.
+Outcomes: The study demonstrates how causal forests can be used to estimate both average and heterogeneous treatment effects in complex educational settings. The methodology identifies variation in treatment effectiveness across students and schools while accounting for clustering and potential selection bias. The paper highlights the practical advantages of causal forests for discovering treatment-effect heterogeneity and discusses challenges related to interpretation, variable selection, and generalizability.
+Relation to the Project: This paper directly informs the implementation strategy used in the Lalonde job-training analysis. The empirical workflow adopted in the project—including estimation of propensity scores using regression forests, estimation of baseline outcomes, construction of a causal forest using orthogonalization (Y.hat and W.hat), extraction of conditional average treatment effects (CATEs), testing for treatment-effect heterogeneity, and evaluation of variable importance—closely follows the procedure described in this paper. While the original application examines a growth-mindset intervention in education, the current project applies the same causal forest framework to study how the effects of the National Supported Work job-training program vary across individuals with different demographic and labor-market characteristics.
+
+
+
+Source 3: 
+
+Link: https://doi.org/10.1214/ss/1009213726
 Objective: 
 Methods:
 Outcomes:
 Relation to the Project:
-
-
-
-
-
-Source 3: https://doi.org/10.1214/ss/1009213726
-
-Link: https://doi.org/10.1214/18-AOS1709
-Objective: 
-Methods:
-Outcomes:
-Relation to the Project:
-
-
 
 
 
