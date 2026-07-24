@@ -6,11 +6,7 @@ https://github.com/ChetnaLourembam/Causal-Inference-Machine-Learning-Project]
 
 ## Description
 
-Evaluating the true economic impact of public policy interventions is notoriously difficult due to selection bias. In labor economics, simply comparing individuals who participated in a job training program against those who didn't yields misleading results, as volunteers often possess different baseline motivations, education levels, or earnings histories. Traditional econometric methods frequently miss how these underlying characteristics interact, failing to show for whom a policy actually works.
-
-This project applies a Causal Forest (Generalized Random Forest) framework a cutting edge fusion of causal inference and machine learning to the landmark Lalonde National Supported Work (NSW) dataset.
-
-Instead of computing a single, flat average, the approach utilizes Double Machine Learning (DML) to isolate and "residualize" the effects of selection bias. By building an ensemble of "honest" causal trees, the model splits the data to uncover Conditional Average Treatment Effects (CATE). This allows us to map exactly how an individual's unique demographic profile (age, education, and pre-program earnings) drives their personalized financial return from the program, transforming a blunt policy evaluation into a targeted, data-driven optimization tool.
+Evaluating public policy interventions is notoriously difficult because selection bias distorts the picture—people who volunteer for job training already bring different motivations, education levels, and work histories to the table. Traditional regression methods blur these traits together, yielding a single, flat average that hides who actually benefits from the program. To solve this, we applied a Causal Forest framework using Double Machine Learning (DML) to the landmark Lalonde dataset. By first residualizing out background noise and selection bias, then building an ensemble of "honest" causal trees, the model isolates Conditional Average Treatment Effects (CATE) across different demographic profiles. Instead of simply asking whether a policy works on average, this approach maps how individual traits like age, education, and past earnings drive personalized financial returns—transforming a traditional policy review into an actionable, targeted decision tool.
 
 ### Task Type
 
