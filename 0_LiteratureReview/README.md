@@ -34,22 +34,16 @@ Approaches or solutions that have been tried before on similar projects.
 
 **SUPPORTING LITERATURE & METHODOLOGICAL FRAMEWORK**:
 - **Propensity Score Matching (PSM)**
-- Dehejia, R. H., & Wahba, S. (2002). Propensity score-matching methods for nonexperimental causal studies. Review of Economics and Statistics, 84(1), 151–161. https://doi.org/10.1162/003465302317331982
+Dehejia, R. H., & Wahba, S. (2002). Propensity score-matching methods for nonexperimental causal studies. Review of Economics and Statistics, 84(1), 151–161. https://doi.org/10.1162/003465302317331982
 
 - **Inverse Probability Weighting (IPW)**
 Robins, J. M., Hernán, M. Á., & Brumback, B. (2000). Marginal structural models and causal inference in epidemiology. Epidemiology, 11(5), 550–560. https://doi.org/10.1097/00001648-200009000-00011
 
 - **Augmented Inverse Probability Weighting (AIPW)**
-Robins, Rotnitzky, & Zhao (1994) — Estimation of Regression Coefficients in Approximate Parametric Models for Incomplete Data.
-
-- **Double Machine Learning (DML)**
-Chernozhukov et al. (2018) — Double/debiased machine learning for treatment and structural parameters.
+Glynn, A. N., & Quinn, K. M. (2010). An introduction to the augmented inverse propensity weighted estimator. Political Analysis, 18(1), 36–56. 
 
 - **T-Learner (ML Meta-Learner)**
-Künzel et al. (2019) — Metalearners for estimating heterogeneous treatment effects using machine learning (PNAS)
-
-- **Causal Forest**
-Wager & Athey (2018) — Estimation and Inference of Heterogeneous Treatment Effects using Random Forests.
+Künzel, S. R., Sekhon, J. S., Bickel, P. J., & Yu, B. (2019). Metalearners for estimating heterogeneous treatment effects using machine learning. Proceedings of the National Academy of Sciences, 116(10), 4156–4165. https://doi.org/10.1073/pnas.1804597116
 
 - **Bayesian Causal Forest (BCF)**
 Hahn, P. R., Murray, J. S., & Carvalho, C. M. (2020). Bayesian regression tree models for causal inference: Regularization, confounding, and heterogeneous effects. Bayesian Analysis, 15(3), 965–1056. https://doi.org/10.1214/19-BA1195
