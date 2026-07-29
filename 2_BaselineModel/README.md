@@ -5,13 +5,17 @@
 ## Baseline Model Results
 
 ### Model Selection
-- **Baseline Model Type:** [e.g., Random Forest, Logistic Regression, Linear Regression, Naive Bayes, etc.]
-- **Rationale:** [Brief explanation of why this model was chosen as baseline]
+- **Baseline Model Type:** Ordinary Least Squares (OLS) Linear Regression
+- **Rationale:** In econometrics and causal inference, starting with a naive OLS linear regression is standard practice. It gives me a clear baseline Average Treatment Effect (ATE) by regressing 1978 earnings (re78) on the treatment indicator (treat) alongside all demographic and historical earnings covariates. This provides a simple benchmark model that my more sophisticated causal models (like Propensity Score Matching) will need to outperform.
 
 ### Model Performance
-- **Evaluation Metric:** [e.g., Accuracy, F1-Score, Precision, Recall, MSE, MAE, R², etc.]
-- **Performance Score:** [e.g., 85% accuracy, F1-score of 0.78, MSE of 0.15]
-- **Cross-Validation Score:** [Mean and standard deviation of CV scores, e.g., 0.82 ± 0.03]
+- **Evaluation Metric:** verage Treatment Effect (ATE), MAE, RMSE, and R²
+- **Performance Score:**
+  * ATE: +$1,378.80 (p-value: 0.080)
+  * MAE: $6,300.31
+  * RMSE: $9,051.88
+  * R²: 0.174
+- **Cross-Validation Score:** N/A (Because I used a standard OLS regression to get my causal baseline statistics, I relied on my 80/20 train-test split instead of k-fold cross-validation. I will use cross-validation for tuning my advanced machine learning models later).
 
 ### Evaluation Methodology
 - **Data Split:** [Train/Validation/Test split ratios, e.g., 70/15/15]
