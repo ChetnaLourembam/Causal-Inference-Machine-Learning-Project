@@ -22,12 +22,18 @@
 ### Feature Description
 The features in this dataset primarily consist of demographic data and historical earnings used as confounding variables (covariates) to control for selection bias between our treatment and control groups.
 
-**Example format:**
 - **Feature 1 (The Intervention):**
   * treat: A binary indicator representing the treatment assignment. A value of 1 means the individual participated in the National Supported Work training program, and 0 means they were part of the observational control group.
+    
 - **Feature 2 (Demographic Features):**
-  * 
-- **Feature Group (group_name):** [Description of a group of related features]
+  * age: A continuous numerical feature representing the individual's age in years. The sample skews quite young, primarily heavily concentrated between the late teens and late twenties.
+  * educ: A continuous numerical feature for the number of years of schooling the individual completed. This is roughly bimodal, with a massive spike exactly at 12 years (high school completion) and very few college graduates.
+  * race: A categorical feature denoting the individual's race or ethnicity (black, hispan, or white).
+  * married: A binary indicator for marital status (1 if married, 0 if unmarried). The majority of the treated group is unmarried.
+  * nodegree: A binary indicator for educational attainment. A value of 1 means the individual dropped out of high school (lacks a degree), and 0 means they have at least a high school diploma.
+ 
+- **Feature 3 (Historical Earnings (Pre-Treatment)):**
+  * re74 & re75: Continuous numerical features representing the individual's real annual earnings in 1974 and 1975, prior to the job training program. Just like the target variable, these are heavily zero-inflated and right-skewed, reflecting the economically disadvantaged baseline of the participants.
 
 ## Exploratory Data Analysis
 
