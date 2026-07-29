@@ -12,7 +12,7 @@ Approaches or solutions that have been tried before on similar projects.
   - **Outcomes**: The actual experimental baseline showed that the program increased post-training earnings by ~$851 for AFDC women and ~$886 for male participants. The non-experimental estimates, however, swung wildly depending on the choice of comparison group and model specification—ranging anywhere from negative values to over +$3,000. Most importantly, even when non-experimental models successfully passed standard specification checks (like verifying pre-training earnings comparability), they still routinely failed to hit the true experimental benchmark.
   - **Relation to the Project**: This paper is the bedrock benchmark for the entire study. By demonstrating that traditional econometric tools struggle to consistently recover true causal impacts from observational data, LaLonde established the classic stress test in causal inference. The project picks up right where he left off—testing whether modern double machine learning (DML) and CATE estimators (like Causal Forests and BCF) can finally overcome these long-standing estimation biases
 
-- **Source 2**: Double/debiased machine learning for treatment and structural parameters
+- **Source 2**: Chernozhukov, V., Chetverikov, D., Demirer, M., Duflo, E., Hansen, C., Newey, W., & Robins, J. (2018). Double/debiased machine learning for treatment and structural parameters. The Econometrics Journal, 21(1), C1–C68.
 
   - **Link: (https://academic.oup.com/ectj/article/21/1/C1/5056401)**
   - **Objective**: The authors address a fundamental challenge in causal inference: how to use flexible, high-dimensional machine learning (ML) models for nuisance functions (like propensity scores or outcome predictions) without introducing heavy regularization bias or overfitting into the main causal estimate.
@@ -20,7 +20,7 @@ Approaches or solutions that have been tried before on similar projects.
   - **Outcomes**: Standard "naive" plug-in ML estimates suffer from severe regularization bias, leading to biased treatment effect estimates and invalid confidence intervals.  DML successfully eliminates this bias, achieving centered Gaussian distributions and enabling valid, uniformly asymptotically accurate confidence bands across a wide array of ML estimators (e.g., Random Forests, Lasso, Neural Networks, and Ensembles)
   - **Relation to the Project**: This paper provides the theoretical justification for Method 5 (DML) and the overall pre-processing pipeline in your research benchmark. Specifically, it proves why your 5-fold cross-fitting and residualization step ($\tilde{Y} = Y - \hat{Y}$ and $\tilde{W} = W - \hat{W}$) works mathematically to yield unbiased treatment effect estimates when applying complex machine learning algorithms to observational data. 
 
-- **Source 3**: Estimation and Inference of Heterogeneous Treatment Effects using Random Forests
+- **Source 3**: Wager, S., & Athey, S. (2018). Estimation and Inference of Heterogeneous Treatment Effects using Random Forests. Journal of the American Statistical Association, 113(523), 1228–1242.
 
   - **Link: (https://www.tandfonline.com/doi/full/10.1080/01621459.2017.1319839)**
   - **Objective**: The authors address the challenge of discovering individual-level, non-parametric heterogeneous treatment effects (Conditional Average Treatment Effects, or CATEs) without falling into the trap of mining data for spurious subgroups.
