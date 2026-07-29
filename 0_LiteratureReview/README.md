@@ -14,11 +14,11 @@ Approaches or solutions that have been tried before on similar projects.
 
 - **Source 2**: []
 
-  - **[Link]()**
-  - **Objective**:
-  - **Methods**:
-  - **Outcomes**:
-  - **Relation to the Project**:
+  - **Link: (10.1111/ectj.12097)**
+  - **Objective**: The authors address a fundamental challenge in causal inference: how to use flexible, high-dimensional machine learning (ML) models for nuisance functions (like propensity scores or outcome predictions) without introducing heavy regularization bias or overfitting into the main causal estimate.
+  - **Methods**: The paper introduces Double/Debiased Machine Learning (DML), built on two essential mathematical mechanisms:  Neyman Orthogonal Scores: Re-formulating estimating equations so that local errors in predicting nuisance parameters do not bias the primary target parameter (making the moment conditions locally insensitive).  Cross-Fitting: A specialized sample-splitting technique where data used to train ML nuisance models is kept strictly separate from data used to estimate the target causal effect, completely removing overfitting bias.  They prove that under cross-fitting, low-dimensional target parameters recover root-$N$ consistency and asymptotic normality, allowing for valid statistical inference.
+  - **Outcomes**: Standard "naive" plug-in ML estimates suffer from severe regularization bias, leading to biased treatment effect estimates and invalid confidence intervals.  DML successfully eliminates this bias, achieving centered Gaussian distributions and enabling valid, uniformly asymptotically accurate confidence bands across a wide array of ML estimators (e.g., Random Forests, Lasso, Neural Networks, and Ensembles)
+  - **Relation to the Project**: This paper provides the theoretical justification for Method 5 (DML) and the overall pre-processing pipeline in your research benchmark. Specifically, it proves why your 5-fold cross-fitting and residualization step ($\tilde{Y} = Y - \hat{Y}$ and $\tilde{W} = W - \hat{W}$) works mathematically to yield unbiased treatment effect estimates when applying complex machine learning algorithms to observational data. 
 
 - **Source 3**: [Title of Source 3]
 
