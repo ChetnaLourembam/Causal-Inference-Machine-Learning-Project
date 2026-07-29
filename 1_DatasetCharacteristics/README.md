@@ -6,26 +6,33 @@
 
 ### Dataset Source
 - **Dataset Link:** https://users.nber.org/~rdehejia/data/.nswdata2.html
-- **Dataset Owner/Contact:** Robert LaLonde (Original National Supported Work Demonstration sample); Rajeev Dehejia and Sadek Wahba (Replicated subsets): Hosted publicly by the National Bureau of Economic Research (NBER)
-
+- **Dataset Owner/Contact:** The original National Supported Work (NSW) Demonstration sample was collected by Robert LaLonde. The replicated and observational subsets are maintained by Rajeev Dehejia and Sadek Wahba, hosted publicly by the National Bureau of Economic Research (NBER). Note: This specific analysis uses the 614-observation subset accessed via the MatchIt repository.
+- 
 ### Dataset Characteristics
-- **Number of Observations:** 445 (185 treated individuals and 260 control individuals)
-- **Number of Features:** 
+- **Number of Observations:** 614 individuals (185 treated participants and 429 non-experimental control individuals)
+- **Number of Features:** 9 (including the treatment indicator and target variable)
 
 ### Target Variable/Label
-- **Label Name:** [Name of the target variable/column]
-- **Label Type:** [Classification/Regression/Clustering/Other]
-- **Label Description:** [What does this label represent? What is the prediction task?]
-- **Label Values:** [For classification: list of classes and their meanings. For regression: range of values. For other tasks: describe the label structure]
-- **Label Distribution:** [Brief description of class balance for classification or value distribution for regression]
+- **Label Name:** re78
+- **Label Type:** Regression (Continuous)
+- **Label Description:** This represents the individual's real annual earnings in 1978, recorded after the job training program concluded. The ultimate task here is causal inference—we are trying to predict what a person's re78 earnings would be with or without the training to estimate the true effect of the intervention.
+- **Label Values:** Continuous monetary values, ranging from $0 to upwards of $60,000.
+- **Label Distribution:** The distribution is highly right-skewed and severely zero-inflated. A massive portion of the sample had zero earnings in 1978, with a long, thin tail of higher earners.
 
 ### Feature Description
-[Provide a brief description of each feature or group of features in your dataset. If you have many features, group them logically and describe each group. Include information about data types, ranges, and what each feature represents.]
+The features in this dataset primarily consist of demographic data and historical earnings used as confounding variables (covariates) to control for selection bias between our treatment and control groups.
 
-**Example format:**
-- **Feature 1 (feature_name):** [Description of what this feature represents, data type, and any relevant details]
-- **Feature 2 (feature_name):** [Description of what this feature represents, data type, and any relevant details]
-- **Feature Group (group_name):** [Description of a group of related features]
+- **Feature 1 (The Intervention):**
+  * treat: A binary indicator representing the treatment assignment. A value of 1 means the individual participated in the National Supported Work training program, and 0 means they were part of the observational control group.
+    
+- **Feature 2 (Demographic Features):**
+  * age: A continuous numerical feature representing the individual's age in years. The sample skews quite young, primarily heavily concentrated between the late teens and late twenties.
+  * educ: A continuous numerical feature for the number of years of schooling the individual completed. This is roughly bimodal, with a massive spike exactly at 12 years (high school completion) and very few college graduates.
+  * race: A categorical feature denoting the individual's race or ethnicity (black, hispan, or white).
+  * married: A binary indicator for marital status (1 if married, 0 if unmarried). The majority of the treated group is unmarried.
+  * nodegree: A binary indicator for educational attainment. A value of 1 means the individual dropped out of high school (lacks a degree), and 0 means they have at least a high school diploma.
+- **Feature 3 (Historical Earnings (Pre-Treatment)):**
+  * re74 & re75: Continuous numerical features representing the individual's real annual earnings in 1974 and 1975, prior to the job training program. Just like the target variable, these are heavily zero-inflated and right-skewed, reflecting the economically disadvantaged baseline of the participants.
 
 ## Exploratory Data Analysis
 
