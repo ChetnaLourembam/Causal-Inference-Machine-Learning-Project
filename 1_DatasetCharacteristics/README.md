@@ -5,8 +5,8 @@
 ## Dataset Information
 
 ### Dataset Source
-- **Dataset Link:** [Provide a direct link to your dataset. If the dataset is private, explain the reason and provide contact information for the dataset owner]
-- **Dataset Owner/Contact:** [If applicable, provide contact information for private datasets]
+- **Dataset Link:** [https://users.nber.org/~rdehejia/data/.nswdata2.html]
+- **Dataset Owner/Contact:** [Robert LaLonde (Original National Supported Work Demonstration sample); Rajeev Dehejia and Sadek Wahba (Replicated subsets): Hosted publicly by the National Bureau of Economic Research (NBER)]
 
 ### Dataset Characteristics
 - **Number of Observations:** [Total number of samples/records in your dataset. For time series data, also specify the temporal resolution (e.g., daily, hourly, etc.)]
