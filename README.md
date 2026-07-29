@@ -1,4 +1,4 @@
-# [Uncovering Hetrogeneous Treatment Effects: A Causal Forest Analysis of the LaLonde NSW Data]
+# [Uncovering HeterogeneousTreatment Effects: Analysis of the LaLonde NSW (National Supported Work) Data]
 
 ## Repository Link
 
