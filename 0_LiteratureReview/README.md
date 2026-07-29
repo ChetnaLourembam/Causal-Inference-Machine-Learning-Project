@@ -2,7 +2,7 @@
 
 Approaches or solutions that have been tried before on similar projects.
 
-**Summary of Each Work**:
+**SUMMARY OF MAIN LITERATURE**:
 
 - **Source 1**: Evaluating the Econometric Evaluations of Training Programs with Experimental, Robert J. LaLonde, The American Economic Review, Sep., 1986, Vol. 76, No. 4 (Sep., 1986), pp. 604-620
 
@@ -32,7 +32,7 @@ Approaches or solutions that have been tried before on similar projects.
 
 
 
-**Supporting Literature & Methodological References**:
+**SUPPORTING LITERATURE & METHODOLOGICAL FRAMEWORK**:
 - **Propensity Score Matching (PSM)**
 Reference: Dehejia & Wahba (2002) — Propensity Score-Matching Methods for Nonexperimental Causal Studies (Building on Rosenbaum & Rubin, 1983).
 
