@@ -34,24 +34,24 @@ Approaches or solutions that have been tried before on similar projects.
 
 **SUPPORTING LITERATURE & METHODOLOGICAL FRAMEWORK**:
 - **Propensity Score Matching (PSM)**
-Reference: Dehejia & Wahba (2002) — Propensity Score-Matching Methods for Nonexperimental Causal Studies (Building on Rosenbaum & Rubin, 1983).
+- Dehejia, R. H., & Wahba, S. (2002). Propensity score-matching methods for nonexperimental causal studies. Review of Economics and Statistics, 84(1), 151–161. https://doi.org/10.1162/003465302317331982
 
 - **Inverse Probability Weighting (IPW)**
-Reference: Robins, Hernán, & Brumback (2000) — Marginal Structural Models and Causal Inference in Epidemiology.
+Robins, J. M., Hernán, M. Á., & Brumback, B. (2000). Marginal structural models and causal inference in epidemiology. Epidemiology, 11(5), 550–560. https://doi.org/10.1097/00001648-200009000-00011
 
 - **Augmented Inverse Probability Weighting (AIPW)**
-Reference: Robins, Rotnitzky, & Zhao (1994) — Estimation of Regression Coefficients in Approximate Parametric Models for Incomplete Data.
+Robins, Rotnitzky, & Zhao (1994) — Estimation of Regression Coefficients in Approximate Parametric Models for Incomplete Data.
 
 - **Double Machine Learning (DML)**
-Reference: Chernozhukov et al. (2018) — Double/debiased machine learning for treatment and structural parameters.
+Chernozhukov et al. (2018) — Double/debiased machine learning for treatment and structural parameters.
 
 - **T-Learner (ML Meta-Learner)**
-Reference: Künzel et al. (2019) — Metalearners for estimating heterogeneous treatment effects using machine learning (PNAS)
+Künzel et al. (2019) — Metalearners for estimating heterogeneous treatment effects using machine learning (PNAS)
 
 - **Causal Forest**
 Wager & Athey (2018) — Estimation and Inference of Heterogeneous Treatment Effects using Random Forests.
 
 - **Bayesian Causal Forest (BCF)**
-Hahn, Murray, & Carvalho (2020) — Bayesian Regression Tree Models for Causal Inference: Regularization, Confounding, and Heterogeneous Effects (Bayesian Analysis).
+Hahn, P. R., Murray, J. S., & Carvalho, C. M. (2020). Bayesian regression tree models for causal inference: Regularization, confounding, and heterogeneous effects. Bayesian Analysis, 15(3), 965–1056. https://doi.org/10.1214/19-BA1195
 
 
