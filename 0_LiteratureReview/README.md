@@ -27,3 +27,31 @@ Approaches or solutions that have been tried before on similar projects.
   - **Methods**: They adapt Leo Breiman’s Random Forest algorithm into a specialized Causal Forest explicitly designed to estimate continuous treatment heterogeneity $\tau(x) = \mathbb{E}[Y^{(1)} - Y^{(0)} \vert{} X = x]$ rather than standard outcome prediction.To guarantee valid inference, they enforce "Honesty" in tree construction—splitting the training sample so that one subsample builds the tree structure and a separate holdout subsample estimates the leaf-level treatment effects.They prove asymptotic properties for subsampled honest forests and establish that an adaptation of Efron’s Infinitesimal Jackknife provides consistent asymptotic variance estimates for constructing pointwise confidence intervals
   - **Outcomes**: Causal Forest predictions are proven to be pointwise consistent for the true treatment effect and follow an asymptotically Gaussian, centered sampling distribution.In empirical simulations, Causal Forests significantly outperform non-adaptive classical approaches like $k$-Nearest Neighbors ($k$-NN) matching, especially as feature dimensions grow and in the presence of noise/irrelevant covariates
   - **Relation to the Project**: This paper directly provides the mathematical foundation and methodology for Method 7 (Causal Forest) in your benchmarking research. It explains how tree-based models can split data to isolate moderator variables (such as age, education, and pre-training earnings) to uncover real treatment effect heterogeneity without falsely identifying random noise as true variation.
+ 
+
+
+
+
+**Supporting Literature & Methodological References**:
+- **Propensity Score Matching (PSM)**
+Reference: Dehejia & Wahba (2002) — Propensity Score-Matching Methods for Nonexperimental Causal Studies (Building on Rosenbaum & Rubin, 1983).
+
+- **Inverse Probability Weighting (IPW)**
+Reference: Robins, Hernán, & Brumback (2000) — Marginal Structural Models and Causal Inference in Epidemiology.
+
+- **Augmented Inverse Probability Weighting (AIPW)**
+Reference: Robins, Rotnitzky, & Zhao (1994) — Estimation of Regression Coefficients in Approximate Parametric Models for Incomplete Data.
+
+- **Double Machine Learning (DML)**
+Reference: Chernozhukov et al. (2018) — Double/debiased machine learning for treatment and structural parameters.
+
+- **T-Learner (ML Meta-Learner)**
+Reference: Künzel et al. (2019) — Metalearners for estimating heterogeneous treatment effects using machine learning (PNAS)
+
+- **Causal Forest**
+Wager & Athey (2018) — Estimation and Inference of Heterogeneous Treatment Effects using Random Forests.
+
+- **Bayesian Causal Forest (BCF)**
+Hahn, Murray, & Carvalho (2020) — Bayesian Regression Tree Models for Causal Inference: Regularization, Confounding, and Heterogeneous Effects (Bayesian Analysis).
+
+
