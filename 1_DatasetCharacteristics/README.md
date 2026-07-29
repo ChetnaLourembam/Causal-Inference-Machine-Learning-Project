@@ -9,8 +9,8 @@
 - **Dataset Owner/Contact:** Robert LaLonde (Original National Supported Work Demonstration sample); Rajeev Dehejia and Sadek Wahba (Replicated subsets): Hosted publicly by the National Bureau of Economic Research (NBER)
 
 ### Dataset Characteristics
-- **Number of Observations:** [Total number of samples/records in your dataset. For time series data, also specify the temporal resolution (e.g., daily, hourly, etc.)]
-- **Number of Features:** [Total number of features in your dataset]
+- **Number of Observations:** 445 (185 treated individuals and 260 control individuals)
+- **Number of Features:** 
 
 ### Target Variable/Label
 - **Label Name:** [Name of the target variable/column]
