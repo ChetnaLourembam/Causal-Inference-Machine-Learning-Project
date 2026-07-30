@@ -34,6 +34,10 @@ The features in this dataset primarily consist of demographic data and historica
 - **Feature 3 (Historical Earnings (Pre-Treatment)):**
   * re74 & re75: Continuous numerical features representing the individual's real annual earnings in 1974 and 1975, prior to the job training program. Just like the target variable, these are heavily zero-inflated and right-skewed, reflecting the economically disadvantaged baseline of the participants.
 
+ <img width="988" height="913" alt="download (1)" src="https://github.com/user-attachments/assets/6a89bfb1-29ca-4010-bd33-20ac94d14efd" />
+
+<img width="990" height="790" alt="download (2)" src="https://github.com/user-attachments/assets/d0030ee5-8e16-4793-b2cd-4665c1e18e6d" />
+
 ## Exploratory Data Analysis
 
 The exploratory data analysis is conducted in the [exploratory_data_analysis.ipynb](exploratory_data_analysis.ipynb) notebook, which includes:
