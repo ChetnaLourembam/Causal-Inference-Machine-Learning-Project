@@ -37,6 +37,9 @@ The features in this dataset primarily consist of demographic data and historica
  <img width="988" height="913" alt="download (1)" src="https://github.com/user-attachments/assets/6a89bfb1-29ca-4010-bd33-20ac94d14efd" />
 
 <img width="990" height="790" alt="download (2)" src="https://github.com/user-attachments/assets/d0030ee5-8e16-4793-b2cd-4665c1e18e6d" />
+<img width="541" height="392" alt="download (3)" src="https://github.com/user-attachments/assets/1b09a4a4-10d3-4e80-a9f3-7ad186071f33" />
+<img width="936" height="790" alt="download" src="https://github.com/user-attachments/assets/eb6d97fa-3b5b-4e84-b75e-dd40084e9b29" />
+
 
 ## Exploratory Data Analysis
 
