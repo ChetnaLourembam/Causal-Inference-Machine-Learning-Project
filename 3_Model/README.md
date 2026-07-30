@@ -4,6 +4,7 @@
 
 
 OVERVIEW
+
 After seeing the severe selection bias and limitations of my naive baseline model, I transitioned from traditional predictive modeling to rigorous Causal Inference. My goal in this phase was to isolate the true, unbiased monetary impact of the job training program on 1978 earnings, filtering out the noise of demographics and historical poverty.
 To do this, I implemented a progressive suite of models—starting with classical econometrics and ending with state-of-the-art causal machine learning techniques.
 
