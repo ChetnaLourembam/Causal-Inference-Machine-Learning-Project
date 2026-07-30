@@ -10,6 +10,7 @@ To do this, I implemented a progressive suite of models—starting with classica
 
 
 MODEL SELECTION
+
 I chose a comprehensive lineup of models to see how increasingly flexible algorithms handle complex, non-linear confounding variables:
 * OLS with Controls: My baseline check to see how a standard linear regression handles the covariates.
 * Propensity Score Matching (PSM): A classical approach to artificially match treated individuals with nearly identical control neighbors to mimic a randomized trial.
@@ -19,22 +20,34 @@ I chose a comprehensive lineup of models to see how increasingly flexible algori
 * Double Machine Learning (DML): Using machine learning to "partial out" the confounding variables from both the treatment assignment and the outcome variable.
 * Causal Forests: An advanced tree-based algorithm designed specifically to estimate Heterogeneous Treatment Effects—telling me exactly who benefited the most.
 
+
+
 FEATURE ENGINEERING 
+
 Because my models now rely on calculating probabilities (Propensity Scores) and distances (Matching), my feature engineering was strictly focused on ensuring the data was mathematically readable.
 * One-Hot Encoding: I converted the categorical race variable into binary columns.
 * Preserving Covariates: Unlike standard ML where I might drop highly correlated features, I kept all available demographic and historical earnings covariates (age, education, re74, re75, etc.). This is crucial to satisfy the causal unconfoundedness assumption (ensuring I don't suffer from omitted variable bias).
 
+
+
 HYPERPARAMETER TUNING 
+
 * Propensity Scores: I utilized a LogisticRegression model with an extended max_iter=2000 to ensure convergence when calculating the probability of each individual receiving treatment.
 * Machine Learning Models: For my T-Learners, I utilized GridSearchCV on my Random Forest Regressors to tune the max_depth and n_estimators. This prevented the trees from overfitting to the highly skewed income data.
 
+
+
 EVALUATION METRICS
+
 In causal inference, standard predictive metrics like Accuracy or MSE are secondary because the "true" individual treatment effect is unobservable (I can't see the same person simultaneously take and not take the training). Instead, I evaluated my models using:
 * Average Treatment Effect (ATE): Tracking how the estimated dollar impact stabilizes as the models get more advanced.
 * Standardized Mean Differences (SMD): Used to evaluate my IPW model. An SMD below 0.1 proves that my weighting successfully balanced the demographics between the two groups.
 * Individual Treatment Effects (ITE): Extracting individual-level predictions from my Causal Forest to understand the distribution of the program's impact.
 
+
+
 COMPARATIVE ANALYSIS AND VISUALIZATION
+
 The progression of models revealed exactly why addressing selection bias is critical. My naive baseline (OLS) provided a highly skewed estimate. However, once I applied matching, weighting, and Double Machine Learning, the estimated impact of the job training program became much more realistic and conservative. The advanced ML models successfully filtered out the noise.
 I generated six advanced visualizations:
 * ATE Comparison Bar Chart: Showing how the treatment effect estimates evolved and stabilized across the 7 models.
