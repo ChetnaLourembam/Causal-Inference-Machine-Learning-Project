@@ -20,6 +20,7 @@ I chose a comprehensive lineup of models to see how increasingly flexible algori
 * Double Machine Learning (DML): Using machine learning to "partial out" the confounding variables from both the treatment assignment and the outcome variable.
 * Causal Forests: An advanced tree-based algorithm designed specifically to estimate Heterogeneous Treatment Effects—telling me exactly who benefited the most.
 
+<img width="1584" height="2184" alt="download (7)" src="https://github.com/user-attachments/assets/ea20a446-8c71-4e9a-bc29-d56ff8d1d295" />
 
 
 FEATURE ENGINEERING 
@@ -44,6 +45,7 @@ In causal inference, standard predictive metrics like Accuracy or MSE are second
 * Standardized Mean Differences (SMD): Used to evaluate my IPW model. An SMD below 0.1 proves that my weighting successfully balanced the demographics between the two groups.
 * Individual Treatment Effects (ITE): Extracting individual-level predictions from my Causal Forest to understand the distribution of the program's impact.
 
+<img width="1584" height="584" alt="download (6)" src="https://github.com/user-attachments/assets/96220359-fa3b-4dff-8bf3-60eee66dee39" />
 
 
 COMPARATIVE ANALYSIS AND VISUALIZATION
@@ -56,3 +58,7 @@ I generated six advanced visualizations:
 * ITE Distribution: Showing that while the average effect is modest, there is a long tail of individuals who saw massive income boosts.
 * Causal Feature Importance: Revealing that a person's historical earnings (re74/re75) were the biggest drivers in determining if the program would help them.
 * Treatment Effect vs. Prior Income: A scatter plot demonstrating that the program generated the highest monetary returns for individuals who started with the absolute lowest pre-intervention incomes.
+
+<img width="1584" height="584" alt="download (5)" src="https://github.com/user-attachments/assets/de6000f4-f8bb-4286-93e8-d1f2ad8d961f" />
+
+<img width="1584" height="584" alt="download (4)" src="https://github.com/user-attachments/assets/6537ca2a-cfe1-4287-8b8e-340b21aa7f8b" />
