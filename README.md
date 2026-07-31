@@ -37,3 +37,4 @@ Causal Inference & Heterogeneous Treatment Effect (HTE) Estimation
 3. **[Baseline Model](2_BaselineModel/baseline_model.ipynb)**
 4. **[Model Definition and Evaluation](3_Model/model_definition_evaluation)**
 5. **[Presentation](4_Presentation/README.md)**
+6. **[Cover Image](Cover_Image.png)**
