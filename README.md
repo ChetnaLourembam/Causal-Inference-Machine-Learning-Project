@@ -1,4 +1,4 @@
-# [Uncovering HeterogeneousTreatment Effects: Analysis of the LaLonde NSW (National Supported Work) Data]
+# [Uncovering Heterogeneous Treatment Effects: Analysis of the LaLonde NSW (National Supported Work) Data]
 
 ## Repository Link
 
