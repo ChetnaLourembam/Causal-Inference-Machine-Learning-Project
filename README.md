@@ -15,21 +15,21 @@ Causal Inference & Heterogeneous Treatment Effect (HTE) Estimation
 ### Results Summary
 
 #### Best Model Performance
-- **Best Model:** Causal Forest via Double Machine Learning
-- **Evaluation Metric:** Policy Gain / R^2_D (DML Pseudo- R^2 for CATE heterogeneity)
-- **Final Performance:** Average Treatment Effect (ATE): +$1,794 annual earnings lift ($p < 0.01$), CATE Range: -$450 to +$4,200 across individual profiles
-
+- **Best Model:** Causal Forest
+- **Evaluation Metric:** Average Treatment Effect (ATE) Stabilization & Covariate Balance (SMD < 0.1)
+- **Final Performance:** The Causal Forest estimated an ATE of -$973.91. While the overall average impact was slightly negative, the Individual Treatment Effect (ITE) distribution revealed a long right-tail of specific individuals who experienced significant positive earnings lifts.
+- 
 #### Model Comparison
-- **Baseline Performance:** +$886 lift (significantly attenuated due to selection bias)
-- **Improvement Over Baseline:** +102% increase in treatment effect precision by controlling for high-dimensional confounding via DML residualization
-- **Best Alternative Model:** +102% increase in treatment effect precision by controlling for high-dimensional confounding via DML residualization
-
+- **Baseline Performance:** $1,378.80 ATE (massively inflated due to selection bias and failure to account for baseline poverty levels).
+- **Improvement Over Baseline:** Successfully controlled for high-dimensional confounding, mathematically collapsing the demographic differences between the treated and control groups to simulate a randomized trial.
+- **Best Alternative Model:** Double Machine Learning (Bayesian Ridge), which provided a highly stable, doubly-robust ATE estimate of $628.43.
+  
 #### Key Insights
-- **Most Important Features:**  Pre-program Earnings (re75 & re74): Low historical earners saw the highest relative lift (+230% vs average), Education Level: Higher earnings lift observed in workers with $<12$ years of schooling, Age: Stronger positive treatment response among younger workers ($<25$ years old). 
-- **Model Strengths:** Captures non-linear feature interactions naturally; isolates confounding via honest tree splitting without overfitting; estimates personalized treatment effects ($CATE$) rather than a blunt average.
-- **Model Limitations:** Sample size constraints in the classic Lalonde dataset limit high-dimensional sub-group granularity; potential for unobserved confounders (e.g., non-quantifiable intrinsic motivation).
-- **Business Impact:** Enables targeted policy intervention. Instead of enrolling candidates indiscriminately, allocating the training program to the top 40% most responsive profiles maximizes total economic ROI by ~$1.6\times$ per public dollar spent. 
-
+- **Most Important Features:**  Pre-program Earnings (re74 & re75) were the dominant drivers of the treatment effect. The scatter plot analysis revealed a distinct downward trend: individuals with the absolute lowest historical incomes saw the highest positive returns from the training.
+- **Model Strengths:** Captures non-linear feature interactions naturally; isolates confounding without overfitting; estimates personalized individual treatment effects (ITE) rather than relying on a misleading global average.
+- **Model Limitations:** Sample size constraints in the classic Lalonde dataset limit high-dimensional sub-group granularity; potential for unobserved confounders (e.g., non-quantifiable intrinsic motivation or interview performance).
+- **Business Impact:** Enables targeted policy intervention. The data proves this job training program is not a universal solution for unemployment, but rather a highly effective intervention for those in extreme poverty. Allocating future program funding strictly to the lowest pre-intervention income brackets will maximize the economic ROI per public dollar spent.
+  
 ## Documentation
 
 1. **[Literature Review](0_LiteratureReview/README.md)**
