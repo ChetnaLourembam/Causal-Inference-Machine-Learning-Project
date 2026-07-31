@@ -2,7 +2,7 @@
 
 ## Repository Link
 
-https://github.com/ChetnaLourembam/Causal-Inference-Machine-Learning-Project]
+[https://github.com/ChetnaLourembam/Causal-Inference-Machine-Learning-Project]
 
 ## Description
 
